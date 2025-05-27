@@ -1,0 +1,218 @@
+body {
+  font-family: "Rubik", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+:root {
+  --primary: #1565c0;
+  --primary-dark: #0d47a1;
+  --bg-light: #e3f2fd;
+  --bg-lighter: #f0f8ff;
+  --text-light: #555;
+  --accent: #dbefff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: var(--bg-light);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.sobre,
+.como-funciona,
+.formulario,
+.calendario {
+  padding: 50px 20px;
+  background-color: var(--bg-lighter);
+  margin-top: 20px;
+}
+
+h2 {
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.como-funciona ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  color: #222;
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 4px solid var(--primary);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.como-funciona ul li:hover {
+  background-color: #f9f9f9;
+}
+
+.como-funciona ul li i {
+  color: var(--primary);
+  font-size: 1.5rem;
+  min-width: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form select,
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+form button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--primary-dark);
+}
+
+.footer {
+  background-color: var(--bg-light);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.ilustracao-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: var(--accent);
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.ilustracao-texto {
+  flex: 1 1 300px;
+}
+
+.ilustracao-texto h2 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+}
+
+.ilustracao-texto p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.ilustracao-imagem {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.ilustracao-imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.calendario table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendario th,
+.calendario td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.calendario thead {
+  background-color: var(--bg-light);
+}
+
+.calendario tbody tr:hover {
+  background-color: #f1f8ff;
+}
+
+@media (max-width: 768px) {
+  .ilustracao-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ilustracao-texto,
+  .ilustracao-imagem {
+    flex: none;
+  }
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
