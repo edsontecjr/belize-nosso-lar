@@ -1,12 +1,3 @@
-body {
-  font-family: "Rubik", "Segoe UI", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
-}
-
 :root {
   --primary: #1565c0;
   --primary-dark: #0d47a1;
@@ -14,6 +5,15 @@ body {
   --bg-lighter: #f0f8ff;
   --text-light: #555;
   --accent: #dbefff;
+}
+
+body {
+  font-family: "Rubik", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
@@ -62,6 +62,63 @@ body {
   padding: 50px 20px;
   background-color: var(--bg-lighter);
   margin-top: 20px;
+}
+
+.tecnologia-segura {
+  padding: 50px 20px;
+  background-color: #eef7ff;
+  margin-top: 20px;
+}
+
+.tecnologia-segura h2 {
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+}
+
+.tecnologia-segura p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tecnologia-segura ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tecnologia-segura ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #222;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-left: 4px solid var(--primary);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.tecnologia-segura ul li i {
+  color: var(--primary);
+  font-size: 1.3rem;
+  min-width: 24px;
+}
+
+.tecnologia-segura .midia {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologia-segura img,
+.tecnologia-segura iframe {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 h2 {
@@ -203,7 +260,8 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
-  .ilustracao-container {
+  .ilustracao-container,
+  .tecnologia-segura .midia {
     flex-direction: column;
     text-align: center;
   }
