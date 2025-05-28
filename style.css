@@ -1,14 +1,5 @@
-:root {
-  --primary: #1565c0;
-  --primary-dark: #0d47a1;
-  --bg-light: #e3f2fd;
-  --bg-lighter: #f0f8ff;
-  --text-light: #555;
-  --accent: #dbefff;
-}
-
 body {
-  font-family: "Rubik", "Segoe UI", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fdfdfd;
@@ -23,7 +14,7 @@ body {
 }
 
 .header {
-  background-color: var(--bg-light);
+  background-color: #e3f2fd;
   text-align: center;
   padding: 60px 20px;
 }
@@ -31,7 +22,7 @@ body {
 .header h1 {
   margin-bottom: 10px;
   font-size: 2.5rem;
-  color: var(--primary);
+  color: #1565c0;
 }
 
 .header p {
@@ -43,86 +34,25 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background-color: var(--primary);
+  background-color: #1565c0;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: var(--primary-dark);
 }
 
 .sobre,
 .como-funciona,
 .formulario,
-.calendario {
+.calendario,
+.tecnologia {
   padding: 50px 20px;
-  background-color: var(--bg-lighter);
+  background-color: #f0f8ff;
   margin-top: 20px;
-}
-
-.tecnologia-segura {
-  padding: 50px 20px;
-  background-color: #eef7ff;
-  margin-top: 20px;
-}
-
-.tecnologia-segura h2 {
-  color: var(--primary-dark);
-  margin-bottom: 15px;
-}
-
-.tecnologia-segura p {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.tecnologia-segura ul {
-  list-style: none;
-  padding: 0;
-}
-
-.tecnologia-segura ul li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #222;
-  background: #ffffff;
-  padding: 10px 15px;
-  border-left: 4px solid var(--primary);
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.tecnologia-segura ul li i {
-  color: var(--primary);
-  font-size: 1.3rem;
-  min-width: 24px;
-}
-
-.tecnologia-segura .midia {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.tecnologia-segura img,
-.tecnologia-segura iframe {
-  max-width: 100%;
-  border-radius: 8px;
 }
 
 h2 {
-  color: var(--primary-dark);
+  color: #0d47a1;
   margin-bottom: 20px;
 }
 
@@ -131,7 +61,8 @@ ul {
   padding: 0;
 }
 
-.como-funciona ul li {
+.beneficios ul li,
+.tecnologia ul li {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -140,17 +71,13 @@ ul {
   background: #ffffff;
   margin-bottom: 10px;
   padding: 10px 15px;
-  border-left: 4px solid var(--primary);
+  border-left: 4px solid #1565c0;
   border-radius: 4px;
-  transition: background-color 0.2s ease;
 }
 
-.como-funciona ul li:hover {
-  background-color: #f9f9f9;
-}
-
-.como-funciona ul li i {
-  color: var(--primary);
+.beneficios ul li i,
+.tecnologia ul li i {
+  color: #1565c0;
   font-size: 1.5rem;
   min-width: 24px;
 }
@@ -168,17 +95,10 @@ form button {
   font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #ccc;
-  transition: border-color 0.3s ease;
-}
-
-form input:focus,
-form select:focus {
-  border-color: var(--primary);
-  outline: none;
 }
 
 form button {
-  background-color: var(--primary);
+  background-color: #1565c0;
   color: white;
   border: none;
   cursor: pointer;
@@ -186,15 +106,15 @@ form button {
 }
 
 form button:hover {
-  background-color: var(--primary-dark);
+  background-color: #0d47a1;
 }
 
 .footer {
-  background-color: var(--bg-light);
+  background-color: #e3f2fd;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: #555;
 }
 
 .ilustracao-container {
@@ -203,7 +123,7 @@ form button:hover {
   align-items: center;
   gap: 40px;
   padding: 40px 20px;
-  background-color: var(--accent);
+  background-color: #dbefff;
   border-radius: 12px;
   margin: 30px 0;
 }
@@ -214,7 +134,7 @@ form button:hover {
 
 .ilustracao-texto h2 {
   font-size: 2rem;
-  color: var(--primary-dark);
+  color: #0d47a1;
   margin-bottom: 15px;
 }
 
@@ -252,25 +172,46 @@ form button:hover {
 }
 
 .calendario thead {
-  background-color: var(--bg-light);
+  background-color: #e3f2fd;
 }
 
 .calendario tbody tr:hover {
   background-color: #f1f8ff;
 }
 
+.tecnologia .midia {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tecnologia .midia img {
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tecnologia .midia iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
-  .ilustracao-container,
-  .tecnologia-segura .midia {
+  .ilustracao-container {
     flex-direction: column;
     text-align: center;
   }
 
   .ilustracao-texto,
-  .ilustracao-imagem {
+  .ilustracao-imagem,
+  .tecnologia .midia {
     flex: none;
   }
-}
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+  .tecnologia .midia {
+    flex-direction: column;
+  }
+}
