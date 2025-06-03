@@ -1,20 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const botoes = document.querySelectorAll(".tecnologia ul li");
-  const midias = document.querySelectorAll(".tecnologia .midia img, .tecnologia .midia iframe");
+document.addEventListener('DOMContentLoaded', () => {
+  const botoes = document.querySelectorAll('.tecnologia .btn-tec');
+  const imagens = document.querySelectorAll('.tecnologia .midia img');
 
   botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-      const id = botao.getAttribute("data-target");
+    botao.addEventListener('click', () => {
+      const alvo = botao.getAttribute('data-target');
 
-      // Remove classe ativa de todas as mídias
-      midias.forEach(midia => {
-        midia.classList.remove("ativa");
+      imagens.forEach(img => {
+        img.classList.remove('ativa');
       });
 
-      // Exibe a mídia correspondente
-      const alvo = document.getElementById(id);
-      if (alvo) {
-        alvo.classList.add("ativa");
+      const imagemAlvo = document.querySelector(`.tecnologia .midia img[data-id="${alvo}"]`);
+      if (imagemAlvo) {
+        imagemAlvo.classList.add('ativa');
       }
     });
   });
