@@ -1,110 +1,128 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rede de Apoio a Idosos</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Belize-Nosso-Lar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
-
   <header class="header">
     <div class="container">
-      <h1>Rede de Apoio a Idosos</h1>
-      <p>Conectando idosos, voluntários e familiares por meio da tecnologia</p>
-      <a href="#formulario" class="btn">Quero Participar</a>
+      <h1>Belize Nosso Lar</h1>
+      <p>Conectando pessoas com quem quer compartilhar tempo e cuidado.</p>
+      <a href="#formulario" class="btn">Quero participar da rede</a>
     </div>
   </header>
 
   <section class="sobre">
     <div class="container">
-      <h2>Sobre o Projeto</h2>
+      <h2>O que é o Belize Nosso Lar?</h2>
       <p>
-        Nossa missão é oferecer uma rede de apoio para idosos que moram sozinhos, conectando familiares, cuidadores e voluntários. Usamos a tecnologia para melhorar a segurança e a qualidade de vida de quem mais precisa.
+        É uma rede social de apoio, formada por voluntários, familiares, cuidadores e pessoas que querem mais companhia e atividades em grupo. Aqui, promovemos encontros, visitas, ligações e apoio mútuo — seja emocional ou prático.
       </p>
     </div>
   </section>
 
-  <section class="como-funciona">
+  <section class="beneficios">
     <div class="container">
-      <h2>Como Funciona</h2>
-      <p>
-        Após preencher o formulário, nossa equipe entrará em contato para validar os dados. Em seguida, você será conectado a uma rede de apoio próxima da sua localidade.
-      </p>
+      <h2>Por que participar?</h2>
+      <ul>
+        <li><i class="fa-solid fa-handshake-angle"></i> Conhecer novas pessoas e fazer amizades</li>
+        <li><i class="fa-solid fa-heart"></i> Receber ou oferecer apoio emocional e prático</li>
+        <li><i class="fa-solid fa-calendar-check"></i> Participar de eventos e atividades em grupo</li>
+        <li><i class="fa-solid fa-user-check"></i> Compartilhar tempo com quem realmente precisa</li>
+      </ul>
     </div>
   </section>
 
-  <section class="tecnologia" id="tecnologia">
+  <section class="calendario">
+    <div class="container">
+      <h2>Programação da Semana</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Atividade</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>Café comunitário na sede</td>
+            <td>09:00</td>
+          </tr>
+          <tr>
+            <td>Terça</td>
+            <td>Torneio de xadrez
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>Visita presencial de voluntários</td>
+            <td>10:00</td>
+          </tr>
+          <tr>
+            <td>Quinta</td>
+            <td>Grupo de caminhada na praia</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>Excursão para o zoológico</td>
+            <td>15:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="tecnologia">
     <div class="container">
       <h2>Tecnologia para Emergências</h2>
-      <p>
-        Aderir ao uso de tecnologias pode ser essencial para quem vive sozinho. Elas ajudam a detectar e reagir rapidamente em casos de acidentes como quedas, escorregões, desmaios ou AVCs.
-      </p>
-
-      <ul class="tecnologia-lista">
-        <li>
-          <button class="btn-tec" data-imagem="img-emergencia">
-            <i class="fas fa-phone-volume"></i> Botão de emergência para contato rápido
-          </button>
-        </li>
-        <li>
-          <button class="btn-tec" data-imagem="img-camera">
-            <i class="fas fa-camera"></i> Câmeras e sensores de presença
-          </button>
-        </li>
-        <li>
-          <button class="btn-tec" data-imagem="img-relogio">
-            <i class="fas fa-heartbeat"></i> Relógios inteligentes com detecção de queda
-          </button>
-        </li>
-        <li>
-          <button class="btn-tec" data-imagem="img-apps">
-            <i class="fas fa-notes-medical"></i> Aplicativos de monitoramento de saúde
-          </button>
-        </li>
+      <p>Aderir ao uso de tecnologias pode ser essencial para quem vive sozinho. Elas ajudam a detectar e reagir rapidamente em casos de acidentes como quedas, escorregões, desmaios ou AVCs.</p>
+      <ul>
+        <li><i class="fas fa-phone-volume"></i> Botão de emergência para contato rápido</li>
+        <li><i class="fas fa-camera"></i> Câmeras e sensores de presença</li>
+        <li><i class="fas fa-heartbeat"></i> Relógios inteligentes com detecção de queda</li>
+        <li><i class="fas fa-notes-medical"></i> Aplicativos de monitoramento de saúde</li>
       </ul>
-
       <div class="midia">
-        <img id="img-emergencia" class="imagem-tec" src="imagens/dispositivo-sos.jpg" alt="Botão de emergência">
-        <img id="img-camera" class="imagem-tec" src="imagens/camera-sensor.jpg" alt="Câmeras e sensores de presença">
-        <img id="img-relogio" class="imagem-tec" src="imagens/relogio-inteligente.jpg" alt="Relógio inteligente com detecção de queda">
-        <img id="img-apps" class="imagem-tec" src="imagens/apps-monitoramento.jpg" alt="Aplicativos de monitoramento de saúde">
-        <iframe
-          width="320"
-          height="180"
-          src="https://www.youtube.com/embed/9GozW23ozX0"
-          title="Dispositivos para idosos"
-          frameborder="0"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+        <img src="imagens/dispositivo-sos.jpg" alt="Dispositivo de emergência">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/9GozW23ozX0" title="Dispositivos para idosos" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
   <section class="formulario" id="formulario">
     <div class="container">
-      <h2>Cadastre-se</h2>
+      <h2>Faça parte da rede</h2>
+      <p>Cadastre-se para interagir, participar ou ajudar alguém que precisa.</p>
       <form>
-        <input type="text" placeholder="Nome completo" required />
-        <input type="email" placeholder="E-mail" required />
-        <input type="tel" placeholder="Telefone" required />
+        <input type="text" placeholder="Seu nome completo" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <input type="tel" placeholder="Telefone para contato" required />
         <select required>
-          <option value="">Quero participar como...</option>
-          <option value="idoso">Idoso</option>
-          <option value="familiar">Familiar</option>
+          <option value="">Você é...</option>
+          <option value="pessoa_sozinha">Pessoa que mora sozinha</option>
           <option value="voluntario">Voluntário</option>
+          <option value="familiar">Familiar de idoso</option>
+          <option value="cuidador">Cuidador</option>
         </select>
-        <button type="submit">Enviar</button>
+        <button type="submit">Cadastrar</button>
       </form>
     </div>
   </section>
 
   <footer class="footer">
-    <p>&copy; 2025 Rede de Apoio a Idosos. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Belize Nosso Lar. Todos juntos por mais presença e afeto.</p>
+    </div>
   </footer>
-
-  <script src="js/tecnologia.js"></script>
 </body>
 </html>
