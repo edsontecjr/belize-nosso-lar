@@ -193,34 +193,24 @@ form button:hover {
   background-color: #f1f8ff;
 }
 
-/* Tecnologia */
-.tecnologia .midia {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.tecnologia .midia img,
-.tecnologia .midia iframe {
+.tecnologia .midia img {
+  display: none;
   max-width: 320px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: none;
 }
 
-.tecnologia .midia img.ativa,
-.tecnologia .midia iframe.ativa {
+.tecnologia .midia img.ativa {
   display: block;
 }
 
-/* Botões da seção tecnologia */
-.tecnologia .btn-tec {
-  all: unset;
+.lista-tecnologia li {
   cursor: pointer;
-  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.lista-tecnologia li:hover {
+  background-color: #dcefff;
 }
 
 /* Responsividade */
